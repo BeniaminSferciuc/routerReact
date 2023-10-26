@@ -1,0 +1,58 @@
+.forImg {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: 35vh;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    padding: 0 1rem;
+    background-color: antiquewhite;
+}
+
+.title {
+    margin-block: 10px;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: rgb(224, 176, 86);
+    font-family: sans-serif;
+    padding: 1rem;
+    margin-block: 1rem;
+}
+
+.btn {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    padding: .5rem 1rem;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+}
