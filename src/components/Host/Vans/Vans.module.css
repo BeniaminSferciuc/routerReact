@@ -1,0 +1,12 @@
+.section {
+    background-color: antiquewhite;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: black;
+    
+}
+
+.vanList {
+    padding: 1rem;
+}

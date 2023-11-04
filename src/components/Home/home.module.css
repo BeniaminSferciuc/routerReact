@@ -1,5 +1,5 @@
 .main {
-    background-image: url(https://img.freepik.com/free-photo/beautiful-shot-grassy-hills-covered-trees-near-mountains-dolomites-italy_181624-24400.jpg?size=626&ext=jpg&ga=GA1.1.27395000.1687932970&semt=sph);
+    background-image: url(../../Images/pexels-cmonphotography-1809644.jpg);
     background-size: cover;
     height: 100%;
     padding: 0 1rem;
@@ -11,12 +11,14 @@
     font-weight: bold;
     font-family: sans-serif;
     padding-block: 1rem;
+    margin-top: 4rem;
 }
 
 .description {
     color: white;
     font-family: sans-serif;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    max-width: 550px;
 }
 
 .btn {
@@ -28,10 +30,6 @@
     color: white;
     font-weight: bold;
     margin-bottom: 2rem;
-}
-
-.footer {
-
 }
 
 .page {

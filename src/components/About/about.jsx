@@ -32,9 +32,6 @@ const about = () => {
                     <button className={style.btn}>Explore our vans</button>
                 </div>
             </main>
-            <footer>
-                <small>© 2023 #VANLIFE</small>
-            </footer>
         </div>
     );
 };

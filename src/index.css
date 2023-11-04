@@ -4,13 +4,25 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
 .nav-bar {
+    width: 100vw;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     padding: 1.2rem 1rem;
-    background-color: antiquewhite;
     align-items: center;
     font-family: sans-serif;
+    background-color: rgba(223, 223, 223, 0.151);
+    backdrop-filter: blur(2px);
+}
+
+.nav-menu {
+    display: none;
 }
 
 .links-to {
@@ -21,4 +33,82 @@
 .link {
     text-decoration: none;
     color: black;
+    margin-right: 1rem;
+}
+
+.activeLink {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.image {
+    width: 100px;
+    border-radius: .5rem;
+}
+
+.info {
+    font-family: sans-serif;
+}
+
+.info > :first-child {
+    margin-bottom: 10px;
+}
+
+.info > :nth-child(2) {
+    margin-bottom: 3px;
+}   
+
+@media only screen and (width < 756px) {
+    .nav-menu {
+        display: block;
+        z-index: 1;
+    }
+
+    .links-to {
+        display: none;
+    }
+
+    .links-to.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(32, 31, 31);
+        justify-content: center;
+        align-items: center;   
+        animation: slideFromLeft 0.5s forwards;
+    }
+
+    @keyframes slideFromLeft {
+        from {
+            inset: 0 0 0 100%; 
+        }
+        to {
+            inset: 0 0 0 50%;
+        }
+    }   
+
+    .links-to.active > .link {
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.typebadge {
+    background-color: orangered;
+    width: fit-content;
+    padding: .2rem .5rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }

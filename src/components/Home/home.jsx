@@ -1,4 +1,5 @@
 import styles from "./home.module.css";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -11,13 +12,10 @@ const Home = () => {
                     minus. Dolorum incidunt doloremque ipsam perspiciatis
                     deleniti fuga!
                 </p>
-                <button className={styles.btn}>Find your van</button>
+                <Link to='/vans' className={styles.btn}>Find your van</Link>
             </main>
-            <footer className={styles.footer}>
-                <small>© 2023 #VANLIFE</small>
-            </footer>
         </div>
-    );
-};
+    )
+}
 
 export default Home;

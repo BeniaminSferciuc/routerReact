@@ -1,0 +1,68 @@
+.main {
+    display: flex;
+    gap: 2rem;
+    padding: 4rem 1rem 1rem 1rem;
+    min-height: 100vh;  
+}
+
+.imageStyle {
+    width: 70vw;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px gainsboro;
+}
+
+.type {
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    padding: .5rem 3rem;
+    width: fit-content;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-family: sans-serif;
+    font-size: clamp(1rem, 5    vw, 3rem);
+    margin-bottom: .5rem;
+}
+
+.price {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    width: 80%;
+    font-size: .85rem;
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    border: none;
+    background-color: orange;
+    color:white;
+    font-weight: bold;
+    padding: .5rem 3rem;
+    width: fit-content;
+    border-radius: 5px;   
+}
+
+@media (width < 726px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .imageStyle {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px gainsboro;
+    }
+
+
+}
